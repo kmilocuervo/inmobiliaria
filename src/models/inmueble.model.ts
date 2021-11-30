@@ -36,22 +36,10 @@ export class Inmueble extends Entity {
   area: string;
 
   @property({
-    type: 'string',
-    required: true,
-  })
-  tipoContrato: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  estado: string;
-
-  @property({
     type: 'boolean',
     required: true,
   })
-  estado1: boolean;
+  estado: boolean;
 
   @property({
     type: 'number',
