@@ -12,3 +12,4 @@ export * from './solicitud.controller';
 export * from './ciudad.controller';
 export * from './tramite.controller';
 export * from './estado.controller';
+export * from './inmueble-foto.controller';

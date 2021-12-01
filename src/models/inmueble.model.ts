@@ -1,6 +1,7 @@
 import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
 import {Tramite} from './tramite.model';
 import {Solicitud} from './solicitud.model';
+import {Foto} from './foto.model';
 
 @model()
 export class Inmueble extends Entity {
@@ -57,6 +58,9 @@ export class Inmueble extends Entity {
     type: 'number',
   })
   idCiudad?: number;
+
+  @hasMany(() => Foto, {keyTo: 'idInmueble'})
+  inmuebletienefotos: Foto[];
 
   constructor(data?: Partial<Inmueble>) {
     super(data);
